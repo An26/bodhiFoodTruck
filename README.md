@@ -2,4 +2,6 @@
 
 ## Website for local buddhist temple and their food truck company
 
-### Created and Copywrite by An Huynh
+#### Using HTML5, CSS3, Bootstrap, Bootstrap Business Casual Theme
+
+### Edited by An Huynh
