@@ -1,7 +1,7 @@
 # BodHi Food Truck Website
 
-## Website for local buddhist temple and their food truck company
+## Informational website for a vietnamese-vegitarian food truck company run by buddhist monks. 
 
-#### Using HTML5, CSS3, Bootstrap, Bootstrap Business Casual Theme
+#### Using HTML5, CSS3, Bootstrap, and Bootstrap Business Casual Theme as base page.
 
-### Edited by An Huynh
+### Created and Modified by An Huynh
