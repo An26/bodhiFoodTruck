@@ -4,4 +4,4 @@
 
 #### Using HTML5, CSS3, Bootstrap, and Bootstrap Business Casual Theme as base page.
 
-### Created and Modified by An Huynh
+### Modified by An Huynh
