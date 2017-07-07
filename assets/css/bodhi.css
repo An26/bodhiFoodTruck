@@ -178,12 +178,14 @@ footer p {
         min-height: 0;
     }
     .navbar-default {
-        border: none;
         background: #fff;
         background: rgba(255, 255, 255, 0.9);
+        /*background: #a8d1a5;*/
+
     }
     .nav>li>a {
         padding: 35px;
+              
     }
     .navbar-nav>li>a {
         line-height: normal;
@@ -194,6 +196,7 @@ footer p {
         margin: 0 auto;
         table-layout: fixed;
         font-size: 1.25em;
+
     }
 }
 
