@@ -25,6 +25,10 @@ h6 {
     letter-spacing: 1px;
 }
 
+a {
+    color: #4d7a4a;
+}
+
 p {
     font-size: 1.25em;
     line-height: 1.6;
@@ -124,6 +128,21 @@ hr {
     font-size: 1em;
 }
 
+.price-set {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.price-set img {
+    margin-bottom: 10px;
+}
+
+
+
+.nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    background-color: #4d7a4a;
+}
+
 footer {
     background: #fff;
     background: rgba(255, 255, 255, 0.9);
@@ -133,6 +152,8 @@ footer p {
     margin: 0;
     padding: 50px 0;
 }
+
+
 
 @media screen and (min-width:768px) {
     .brand {
