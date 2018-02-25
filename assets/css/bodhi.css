@@ -26,6 +26,10 @@ h6 {
     letter-spacing: 1px;
 }
 
+a {
+    color: #4d7a4a;
+}
+
 p {
     font-size: 1.25em;
     line-height: 1.6;
@@ -147,8 +151,29 @@ hr {
     font-size: 1em;
 }
 
+.nav .nav-link {
+    padding: 10px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    background-color: #4d7a4a;
+}
+
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
+    background-color: #4d7a4a;
+}
+
 .other-week {
     color: #6BC665;
+}
+
+.food-truck-img {
+    padding: 10px;
 }
 
 footer {
