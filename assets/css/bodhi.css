@@ -152,15 +152,19 @@ hr {
 }
 
 .nav .nav-link {
-    padding: 15px;
+    padding: 10px;
+    text-align: center;
     text-transform: lowercase;
 }
 
-.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover{
+.nav-pills>li.active>a,
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
     background-color: #4d7a4a;
 }
 
-.nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+.nav-pills>li.active>a:focus,
+.nav-pills>li.active>a:hover {
     background-color: #4d7a4a;
 }
 
@@ -168,9 +172,8 @@ hr {
     color: #6BC665;
 }
 
-.food-truck-img{
+.food-truck-img {
     padding: 10px;
-
 }
 
 footer {
@@ -182,8 +185,6 @@ footer p {
     margin: 0;
     padding: 50px 0;
 }
-
-
 
 @media screen and (min-width:768px) {
     .brand {
