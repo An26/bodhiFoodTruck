@@ -124,6 +124,12 @@ hr {
     margin-bottom: 35px;
 }
 
+.menu h2{
+    font-size: 1.8em;
+    font-family: Trebuchet MS;
+    text-transform: capitalize;
+}
+
 .desserts section {
     /*background-color: red; for testing...*/
     margin-bottom: 35px;
