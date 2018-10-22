@@ -178,18 +178,20 @@
                 <hr>
                 <p>
                     2301 W. Parmer Lane <br /> Austin, TX 78727 <br />
-
                 </p>
+
+                <div class="newsAlerts"></div>
+
                 <table align="center">
-                    <tr align="left">
+                    <tr id="monday-hours" align="left">
                         <td>
                             Monday:
                         </td>
                         <td>
-                            9:00am - 6:00pm
+                            Closed
                         </td>
                     </tr>
-                    <tr align="left">
+                    <tr id="tuesday-hours" align="left">
                         <td>
                             Tuesday:
                         </td>
@@ -197,7 +199,7 @@
                             9:00am - 6:00pm
                         </td>
                     </tr>
-                    <tr align="left">
+                    <tr id="wednesday-hours" align="left">
                         <td>
                             Wednesday: &nbsp;&nbsp;
                         </td>
@@ -205,7 +207,7 @@
                             9:00am - 6:00pm
                         </td>
                     </tr>
-                    <tr align="left">
+                    <tr id="thursday-hours" align="left">
                         <td>
                             Thursday:
                         </td>
@@ -213,7 +215,7 @@
                             9:00am - 6:00pm
                         </td>
                     </tr>
-                    <tr align="left">
+                    <tr id="friday-hours" align="left">
                         <td>
                             Friday:
                         </td>
@@ -221,7 +223,7 @@
                             9:00am - 6:00pm
                         </td>
                     </tr>
-                    <tr align="left">
+                    <tr id="saturday-hours" align="left">
                         <td>
                             Saturday:
                         </td>
@@ -229,7 +231,7 @@
                             10:00am - 5:00pm
                         </td>
                     </tr>
-                    <tr align="left">
+                    <tr id="sunday-hours" align="left">
                         <td>
                             Sunday:
                         </td>
@@ -241,7 +243,6 @@
 
             </div>
         </div>
-
 
 
         <div class="row">
@@ -322,58 +323,73 @@
     <!-- date toggling app -->
     <script>
         var date = new Date();
-        var today = date.getDay();
+        var UTCdate = date.toUTCString();
+        var today = date.getDate();
+        var month = date.getMonth();
+        var year = date.getFullYear();
+        var weekDay = date.getDay();
         var day;
-        console.log(today + " today");
+        console.log(month, today, year);
 
+        if (month === 9 && today > 21 < 24 && year === 2018) {
+            $('.newsAlerts').append(
+                "<div class='alert alert-danger' role='alert'><strong>ATTENTION: </strong>" +
+                UTCdate + "<br /><br /> We will be closed on <strong>Tuesday, October 23rd, 2018</strong> due to the recent water restrictions in Austin, Texas. We will resume back to our daily scheduale starting Wednesday, October 24th 2018. <br /> <br /> We here at Bodhi, thank you for your patience.</div>"
+            );
 
-        // testing here
-        test = Math.floor(Math.random() * Math.floor(7));
-        console.log(test + " test");
+            $('#tuesday-hours').css('font-weight', 'normal');
+            $('#tuesday-hours').css('color', '#D7DBDD');
+        }
 
-
-        switch (today) {
+        switch (weekDay) {
             case 0:
                 day = "Sunday";
                 $(".nav-pills:nth-child(7)").addClass("active");
                 $('#pills-sunday').addClass("active in");
                 $('#pills-sunday-tab').addClass("active");
+                $('#sunday-hours').css("font-weight", "bold");
                 break;
             case 1:
                 day = "Monday";
                 $(".nav-pills > li:nth-child(1)").addClass("active");
                 $('#pills-monday').addClass("active in");
                 $('#pills-monday-tab').addClass("active");
+                $('#monday-hours').css("font-weight", "bold");
                 break;
             case 2:
                 day = "Tuesday";
                 $(".nav-pills > li:nth-child(2)").addClass("active");
                 $('#pills-tuesday').addClass("active in");
                 $('#pills-tuesday-tab').addClass("active");
+                $('#tuesday-hours').css("font-weight", "bold");
                 break;
             case 3:
                 day = "Wednesday";
                 $(".nav-pills > li:nth-child(3)").addClass("active");
                 $('#pills-wednesday').addClass("active in");
                 $('#pills-wednesday-tab').addClass("active");
+                $('#wednesday-hours').css("font-weight", "bold");
                 break;
             case 4:
                 day = "Thursday";
                 $(".nav-pills > li:nth-child(4)").addClass("active");
                 $('#pills-thursday').addClass("active in");
                 $('#pills-thursday-tab').addClass("active");
+                $('#thursday-hours').css("font-weight", "bold");
                 break;
             case 5:
                 day = "Friday";
                 $(".nav-pills > li:nth-child(5)").addClass("active");
                 $('#pills-friday').addClass("active in");
                 $('#pills-friday-tab').addClass("active");
+                $('#friday-hours').css("font-weight", "bold");
                 break;
             case 6:
                 day = "Saturday";
                 $(".nav-pills > li:nth-child(6)").addClass("active");
                 $('#pills-saturday').addClass("active in");
                 $('#pills-saturday-tab').addClass("active");
+                $('#saturday-hours').css("font-weight", "bold");
                 break;
             default:
                 console.log("Sorry, can't find date");
