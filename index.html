@@ -76,9 +76,9 @@
 
     <div class="container">
         <!-- Intro Message -->
-        <div class="row">
+        <div class="row" align="center">
             <div class="box">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12">
                     <h2 class="brand-before">
                         <small>Welcome to</small>
                     </h2>
@@ -167,21 +167,39 @@
                 </div>
             </div>
         </div> -->
+        <div class="newsAlerts" align="center" style="display: none;">
+            <div class="invitation_bodhi" align="center" style="display: none;">
+                <img src="assets/images/Bodhi_Invitation.jpg" width="50%" style="border: 3px solid black; margin-bottom: 2em;" align="center" />
+            </div>
+
+            <div class='row alert alert-warning' role='alert'>
+                <div class='col-md-3 d-none d-sm-block'><img src='assets/images/lantern.svg' alt='chinese lantern' width='30%' /></div>
+                <div class='col-md-6'>
+                    <div>
+                        <strong>ATTENTION: </strong>
+                        <br /><br />
+                        <p>We will be closed <strong>Tuesday February 5th - Thursday February 7th</strong>. We will resume back to our daily scheduale on February 8th for Vietnamese New Year. </p>
+                        <br>
+                        <sup style='color:#f73900;'>
+                                        <div>Icon made by <a href='https://www.freepik.com/' title='Freepik' style='color:#f73900;'>Freepik</a> from <a href='https://www.flaticon.com/' title='Flaticon' style='color:#f73900;'>www.flaticon.com</a></div>
+                                    </sup>
+                    </div>
+                </div>
+
+                <div class='col-md-3 d-none d-sm-block'><img src='assets/images/lantern.svg' alt='chinese lantern' width='30%' /></div>
+            </div>
+        </div>
 
         <div class="row text-center">
             <div class="col-lg-12 text-center">
                 <hr>
                 <h2 class="intro-text">
                     <strong>Location</strong>
-
                 </h2>
                 <hr>
                 <p>
                     2301 W. Parmer Lane <br /> Austin, TX 78727 <br />
                 </p>
-
-                <div class="newsAlerts">
-                </div>
 
                 <table align="center">
                     <tr id="monday-hours" align="left">
@@ -331,14 +349,16 @@
         var weekDay = date.getDay();
         var day;
         console.log(month, today, year);
+        var currentdate = new Date();
+        var startdate = new Date('01/23/2019');
+        var vnewyear = new Date('02/05/2019');
+        var enddate = new Date('02/08/2019');
 
-        if (month === 0 && today === 1 && year === 2019) {
-            $('.newsAlerts').append(
-                "<div class='alert alert-warning' role='alert'><strong>ATTENTION: </strong>" +
-                    "<br /><br /> We will be closed today <strong>Tuesday, January 1st, 2019</strong>. We will resume back to our daily scheduale starting Tomorrow. Until then, Happy New Year!!</div>"
-            );
-
-
+        if (currentdate < vnewyear) {
+            $('.invitation_bodhi').css('display', 'block');
+        }
+        if (currentdate < enddate) {
+            $('.newsAlerts').css('display', 'block');
         }
 
         switch (weekDay) {
