@@ -167,7 +167,11 @@
                 </div>
             </div>
         </div> -->
-        <div class="newsAlerts" align="center" style="display: none;"></div>
+        
+        <!-- news center -->
+        <div class="newsAlert" align="center" style="display: none;">
+            <div class="alert alert-info" id="alertMessage" role="alert" text-align="center"></div>
+        </div>
 
         <div class="row text-center">
             <div class="col-lg-12 text-center">
@@ -318,73 +322,8 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="assets/js/bootstrap.min.js"></script>
 
-    <!-- date toggling app -->
-    <script>
-        var date = new Date();
-        var UTCdate = date.toUTCString();
-        var today = date.getDate();
-        var month = date.getMonth();
-        var year = date.getFullYear();
-        var weekDay = date.getDay();
-        var day;
-
-        switch (weekDay) {
-            case 0:
-                day = "Sunday";
-                $(".nav-pills:nth-child(7)").addClass("active");
-                $('#pills-sunday').addClass("active in");
-                $('#pills-sunday-tab').addClass("active");
-                $('#sunday-hours').css("font-weight", "bold");
-                break;
-            case 1:
-                day = "Monday";
-                $(".nav-pills > li:nth-child(1)").addClass("active");
-                $('#pills-monday').addClass("active in");
-                $('#pills-monday-tab').addClass("active");
-                $('#monday-hours').css("font-weight", "bold");
-                break;
-            case 2:
-                day = "Tuesday";
-                $(".nav-pills > li:nth-child(2)").addClass("active");
-                $('#pills-tuesday').addClass("active in");
-                $('#pills-tuesday-tab').addClass("active");
-                $('#tuesday-hours').css("font-weight", "bold");
-                break;
-            case 3:
-                day = "Wednesday";
-                $(".nav-pills > li:nth-child(3)").addClass("active");
-                $('#pills-wednesday').addClass("active in");
-                $('#pills-wednesday-tab').addClass("active");
-                $('#wednesday-hours').css("font-weight", "bold");
-                break;
-            case 4:
-                day = "Thursday";
-                $(".nav-pills > li:nth-child(4)").addClass("active");
-                $('#pills-thursday').addClass("active in");
-                $('#pills-thursday-tab').addClass("active");
-                $('#thursday-hours').css("font-weight", "bold");
-                break;
-            case 5:
-                day = "Friday";
-                $(".nav-pills > li:nth-child(5)").addClass("active");
-                $('#pills-friday').addClass("active in");
-                $('#pills-friday-tab').addClass("active");
-                $('#friday-hours').css("font-weight", "bold");
-                break;
-            case 6:
-                day = "Saturday";
-                $(".nav-pills > li:nth-child(6)").addClass("active");
-                $('#pills-saturday').addClass("active in");
-                $('#pills-saturday-tab').addClass("active");
-                $('#saturday-hours').css("font-weight", "bold");
-                break;
-            default:
-                console.log("Sorry, can't find date");
-                day = "Error";
-        }
-    </script>
-
-
+    <!-- local js code -->
+    <script src="app.js"></script>
 
 </body>
 
