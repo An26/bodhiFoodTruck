@@ -95,7 +95,7 @@ function setAlert(startDayMMDDYYYY, endDayMMDDYYYY, message) {
 }
 
 // set alerts/updates HERE!
-var message = "Our food truck will be closed from August 14th - August 21st. We are off due to an all staff religious retreat and an Ullambana ceremony. Thank you for your patience and we will see you on August 22nd.";
+var message = "Our food truck will be closed on August 4th and will return to our normal working hours on August 5th.";
 
-setAlert(currentDate.MMDDYYYY, "08/21/2019", message);
+setAlert(currentDate.MMDDYYYY, "09/05/2019", message);
 
