@@ -66,7 +66,7 @@ switch (currentDate.weekDay) {
 }
 
 // provide mm/dd/yyyy string as startday and endday parameters
-function setAlert(startDayMMDDYYYY, endDayMMDDYYYY, message) {
+function setAlert(startDayMMDDYYYY, endDayMMDDYYYY, message, htmlString) {
     var startDate = {
         "month": startDayMMDDYYYY.split("/")[0],
         "day": startDayMMDDYYYY.split("/")[1],
@@ -88,14 +88,21 @@ function setAlert(startDayMMDDYYYY, endDayMMDDYYYY, message) {
         currentDate.month >= startDate.month <= endDate.month &&
         currentDate.year >= startDate.year <= endDate.year) {
 
-        $("#alertMessage").text(message);
+        
+        if (htmlString) {
+            $("#alertMessage").html(htmlString).append(message);
+        } else {
+            $("#alertMessage").append(message);
+        }
         $(".newsAlert").css('display', 'block');
         $(".alert .alert-info").css('display', 'block');
     } 
 }
 
 // set alerts/updates HERE!
-var message = "Our food truck will be closed on August 4th and will return to our normal working hours on August 5th.";
+var message = "Our food truck will be closed until August 11th. We unexpectedly lost one of our beloved monks this week and will have to take time off for our holy farewell ritual. Thank you for your patience, we will see you next week Wednesday.";
 
-setAlert(currentDate.MMDDYYYY, "09/05/2019", message);
+var htmlString = "<strong>**UPDATE**</strong><p class='alert-info'>We will be closed until Wednesday, <strong>August 11th</strong>.</p>";
+
+setAlert(currentDate.MMDDYYYY, "09/11/2019", message, htmlString);
 
