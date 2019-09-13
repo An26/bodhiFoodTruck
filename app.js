@@ -102,8 +102,9 @@ function setAlert(startDayMMDDYYYY, endDayMMDDYYYY, message, htmlString) {
 // set alerts/updates HERE!
 var endDate = "09/18/2019";
 
-//var message = "We are closed until next Wednesday 9/18/2018. We apoligize for any inconveniences.";
+var message = "We are closed until next Wednesday 9/18/2018. We apoligize for any inconveniences.";
 
+//add on any html here...
 var htmlString = "<strong>**UPDATE " + currentDate.MMDDYYYY + "**</strong><p class='alert-info'>Due to some unforeseen circumstances, we will be closed until <strong> " + endDate + " </strong>.</p>";
 
 setAlert(currentDate.MMDDYYYY, endDate , message, htmlString);
