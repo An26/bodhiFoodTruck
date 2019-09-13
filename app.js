@@ -100,9 +100,11 @@ function setAlert(startDayMMDDYYYY, endDayMMDDYYYY, message, htmlString) {
 }
 
 // set alerts/updates HERE!
-var message = "Our food truck will be closed until August 11th. We unexpectedly lost one of our beloved monks this week and will have to take time off for our holy farewell ritual. Thank you for your patience, we will see you next week Wednesday.";
+var endDate = "09/18/2019";
 
-var htmlString = "<strong>**UPDATE**</strong><p class='alert-info'>We will be closed until Wednesday, <strong>August 11th</strong>.</p>";
+var message = "We are closed until next Wednesday 9/18/2018. We apoligize for any inconveniences.";
 
-setAlert(currentDate.MMDDYYYY, "09/11/2019", message, htmlString);
+var htmlString = "<strong>**UPDATE " + currentDate.MMDDYYYY + "**</strong><p class='alert-info'>We will be closed until <strong " + endDate + " </strong>.</p>";
+
+setAlert(currentDate.MMDDYYYY, endDate , message, htmlString);
 
