@@ -262,3 +262,8 @@ footer p {
         clear: both;
     }
 }
+
+.newsAlert .timestamp {
+    font-size: 1rem;
+    text-align: left;
+}

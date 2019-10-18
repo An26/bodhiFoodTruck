@@ -2,7 +2,7 @@ var date = new Date();
 var currentDate = {
     "UTCdate": date.toUTCString(),
     "day": date.getDate(),
-    "month": date.getMonth(),
+    "month": date.getMonth() + 1,
     "year": date.getFullYear(),
     "weekDay": date.getDay(),
     "MMDDYYYY": date.getMonth() + "/" + date.getDate() + "/" + date.getFullYear()
@@ -66,46 +66,50 @@ switch (currentDate.weekDay) {
 }
 
 // provide mm/dd/yyyy string as startday and endday parameters
-function setAlert(startDayMMDDYYYY, endDayMMDDYYYY, message, htmlString) {
-    var startDate = {
-        "month": startDayMMDDYYYY.split("/")[0],
-        "day": startDayMMDDYYYY.split("/")[1],
-        "year": startDayMMDDYYYY.split("/")[2],
-        "MMDDYYYY": startDayMMDDYYYY.split("/")[1] + "/" + startDayMMDDYYYY.split("/")[0] + "/" + startDayMMDDYYYY.split("/")[2]
+function setAlert(params) {
+
+    $('.newsAlert .timestamp').text('Posted On: ' + params.startDate);
+
+    var beginTime = {
+        "month": params.startDate.split("/")[0],
+        "day": params.startDate.split("/")[1],
+        "year": params.startDate.split("/")[2],
+        "MMDDYYYY": params.startDate.split("/")[1] + "/" + params.startDate.split("/")[0] + "/" + params.startDate.split("/")[2]
     }
 
-    var endDate = {
-        "month": endDayMMDDYYYY.split('/')[0],
-        "day": endDayMMDDYYYY.split('/')[1],
-        "year": endDayMMDDYYYY.split('/')[2],
-        "MMDDYYYY": endDayMMDDYYYY.split('/')[1] + "/" + endDayMMDDYYYY.split('/')[0] + "/" + endDayMMDDYYYY.split('/')[2]
+    var endTime = {
+        "month": params.endDate.split('/')[0],
+        "day": params.endDate.split('/')[1],
+        "year": params.endDate.split('/')[2],
+        "MMDDYYYY": params.endDate.split('/')[1] + "/" + params.endDate.split('/')[0] + "/" + params.endDate.split('/')[2]
     }
 
-    console.log(startDate);
-    console.log(endDayMMDDYYYY);
+    if (currentDate.day >= beginTime.day <= endTime.day &&
+        currentDate.month >= beginTime.month <= endTime.month &&
+        currentDate.year >= beginTime.year <= endTime.year) {
 
-    if (currentDate.day >= startDate.day <= endDate.day &&
-        currentDate.month >= startDate.month <= endDate.month &&
-        currentDate.year >= startDate.year <= endDate.year) {
-
-        
-        if (htmlString) {
-            $("#alertMessage").html(htmlString).append(message);
+        if (params.headerHTML) {
+            $("#alertMessage").html(params.headerHTML).append(params.message);
         } else {
-            $("#alertMessage").append(message);
+            $("#alertMessage").append(params.message);
         }
         $(".newsAlert").css('display', 'block');
         $(".alert .alert-info").css('display', 'block');
     } 
+
+    if (typeof params.imageSrc !== 'undefined') {
+        $('body .newsAlert .image').css('display', 'block');
+        $('body .newsAlert .image img').attr('src', params.imageSrc);
+    }
 }
 
-// set alerts/updates HERE!
-var endDate = "09/18/2019";
+var alert = {
+    "startDate": "10/17/2019",
+    "endDate": "11/10/2019",
+    "headerHTML": "<strong>**IMPORTANT UPDATE**</strong> <br />",
+    "message": "We will be moving our food truck to the back of the Warrior II Yoga, and Angel Hair and Nail shop. We will have more space and a designated eating area for everyone. Please visit us at our new place on <strong>11/06/2019 </strong>, behind <strong> 2301 W. Parmer Ln., Austin TX 78724. </strong>",
+    "imageSrc": "assets/images/icons/food-truck.png"
+}
 
-var message = "We are closed until next Wednesday 9/18/2018. We apoligize for any inconveniences.";
-
-//add on any html here...
-var htmlString = "<strong>**UPDATE " + currentDate.MMDDYYYY + "**</strong><p class='alert-info' style='font-size: 1em;'>Due to some unforeseen circumstances, we will be closed until <strong> " + endDate + " </strong>.</p>";
-
-setAlert(currentDate.MMDDYYYY, endDate , message, htmlString);
+setAlert(alert);
 
