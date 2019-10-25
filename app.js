@@ -67,9 +67,6 @@ switch (currentDate.weekDay) {
 
 // provide mm/dd/yyyy string as startday and endday parameters
 function setAlert(params) {
-
-    $('.newsAlert .timestamp').text('Posted On: ' + params.startDate);
-
     var beginTime = {
         "month": params.startDate.split("/")[0],
         "day": params.startDate.split("/")[1],
@@ -89,27 +86,41 @@ function setAlert(params) {
         currentDate.year >= beginTime.year <= endTime.year) {
 
         if (params.headerHTML) {
-            $("#alertMessage").html(params.headerHTML).append(params.message);
+            params.elementSelector.find('.alert').html(params.headerHTML).append(params.message);
         } else {
-            $("#alertMessage").append(params.message);
+            params.elementSelector.find('.alert').append(params.message);
         }
-        $(".newsAlert").css('display', 'block');
-        $(".alert .alert-info").css('display', 'block');
+        params.elementSelector.css('display', 'block');
+        $(".alert").css('display', 'block');
     } 
 
+    //$('.newsAlert .timestamp').text('Posted On: ' + params.startDate);
+    params.elementSelector.find('.timestamp').text('Posted On: ' + params.startDate);
+
     if (typeof params.imageSrc !== 'undefined') {
-        $('body .newsAlert .image').css('display', 'block');
-        $('body .newsAlert .image img').attr('src', params.imageSrc);
+        params.elementSelector.find('.image').css('display', 'block');
+        params.elementSelector.find('.image img').attr('src', params.imageSrc);
     }
 }
 
 var alert = {
     "startDate": "10/17/2019",
     "endDate": "11/10/2019",
+    "elementSelector": $('.newsAlert.alert'),
     "headerHTML": "<strong>**IMPORTANT UPDATE**</strong> <br />",
     "message": "We will be moving our food truck to the back of the Warrior II Yoga, and Angel Hair and Nail shop. We will have more space and a designated eating area for everyone. Please visit us at our new place on <strong>11/06/2019 </strong>, behind <strong> 2301 W. Parmer Ln., Austin TX 78724. </strong>",
     "imageSrc": "assets/images/icons/food-truck.png"
 }
 
+var alert2 = {
+    "startDate": "10/25/2019",
+    "endDate": "10/26/2019",
+    "elementSelector": $('.newsAlert.alert2'),
+    "headerHTML": "<strong>**IMPORTANT UPDATE**</strong> <br />",
+    "message": "We will be closed today due to unforeseen weather."
+}
+
 setAlert(alert);
+
+setAlert(alert2);
 
