@@ -67,24 +67,23 @@ switch (currentDate.weekDay) {
 
 // provide mm/dd/yyyy string as startday and endday parameters
 function setAlert(params) {
-    var beginTime = {
-        "month": params.startDate.split("/")[0],
-        "day": params.startDate.split("/")[1],
-        "year": params.startDate.split("/")[2],
-        "MMDDYYYY": params.startDate.split("/")[1] + "/" + params.startDate.split("/")[0] + "/" + params.startDate.split("/")[2]
-    }
+    // var beginTime = {
+    //     "month": parseInt(params.startDate.split("/")[0]),
+    //     "day": parseInt(params.startDate.split("/")[1]),
+    //     "year": parseInt(params.startDate.split("/")[2]),
+    //     "MMDDYYYY": params.startDate.split("/")[0] + "/" + params.startDate.split("/")[1] + "/" + params.startDate.split("/")[2]
+    // }
 
-    var endTime = {
-        "month": params.endDate.split('/')[0],
-        "day": params.endDate.split('/')[1],
-        "year": params.endDate.split('/')[2],
-        "MMDDYYYY": params.endDate.split('/')[1] + "/" + params.endDate.split('/')[0] + "/" + params.endDate.split('/')[2]
-    }
+    // var endTime = {
+    //     "month": parseInt(params.endDate.split('/')[0]),
+    //     "day": parseInt(params.endDate.split('/')[1]),
+    //     "year": parseInt(params.endDate.split('/')[2]),
+    //     "MMDDYYYY": params.endDate.split('/')[0] + "/" + params.endDate.split('/')[1] + "/" + params.endDate.split('/')[2]
+    // }
 
-    if (currentDate.day >= beginTime.day <= endTime.day &&
-        currentDate.month >= beginTime.month <= endTime.month &&
-        currentDate.year >= beginTime.year <= endTime.year) {
+    var endDate = new Date(params.endDate);
 
+    if (date < endDate || date === endDate) {
         if (params.headerHTML) {
             params.elementSelector.find('.alert').html(params.headerHTML).append(params.message);
         } else {
@@ -92,7 +91,9 @@ function setAlert(params) {
         }
         params.elementSelector.css('display', 'block');
         $(".alert").css('display', 'block');
-    } 
+    } else {
+        $(".alert").css('display', 'none');
+    }
 
     //$('.newsAlert .timestamp').text('Posted On: ' + params.startDate);
     params.elementSelector.find('.timestamp').text('Posted On: ' + params.startDate);
