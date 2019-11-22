@@ -103,24 +103,15 @@ function setAlert(params) {
     }
 }
 
-var alert = {
-    "startDate": "10/17/2019",
-    "endDate": "11/10/2019",
+var thanksgivingAlert = {
+    "startDate": "11/21/2019",
+    "endDate": "12/04/2019",
     "elementSelector": $('.newsAlert.alert'),
     "headerHTML": "<strong>**IMPORTANT UPDATE**</strong> <br />",
-    "message": "We will be moving our food truck to the back of the Warrior II Yoga, and Angel Hair and Nail shop. We will have more space and a designated eating area for everyone. Please visit us at our new place on <strong>11/06/2019 </strong>, behind <strong> 2301 W. Parmer Ln., Austin TX 78724. </strong>",
+    "message": "We will be closed from <strong>November 27th</strong> until <strong>December 4th</strong> for Thanksgiving Holidays.",
     "imageSrc": "assets/images/icons/food-truck.png"
 }
 
-var alert2 = {
-    "startDate": "10/25/2019",
-    "endDate": "10/26/2019",
-    "elementSelector": $('.newsAlert.alert2'),
-    "headerHTML": "<strong>**IMPORTANT UPDATE**</strong> <br />",
-    "message": "We will be closed today due to unforeseen weather."
-}
+setAlert(thanksgivingAlert);
 
-setAlert(alert);
-
-setAlert(alert2);
 
