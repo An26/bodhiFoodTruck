@@ -113,6 +113,26 @@ var thanksgivingAlert = {
     "imageSrc": "assets/images/icons/food-truck.png"
 }
 
-setAlert(thanksgivingAlert);
+var xmasAlert = {
+    "startDate": "12/17/2019",
+    "endDate": "12/27/2019",
+    "elementSelector": $('.newsAlert.alert2'),
+    "headerHTML": "<strong>**WINTER HOLIDAY HOURS**</strong> <br />",
+    "message": "We will closed Tuesday December 24th and Wednesday December 25th, and will be back on Thursday December 26th.",
+    // "imageSrc": "assets/images/icons/food-truck.png"
+}
+
+var NYAlert = {
+    "startDate": "12/17/2019",
+    "endDate": "1/03/2020",
+    "elementSelector": $('.newsAlert.alert'),
+    "headerHTML": "<strong>**NEW YEAR EVE HOURS**</strong> <br />",
+    "message": "We will closed on Wednesday January 1st and Thursday January 2nd and will resume regular hours on Friday January 3rd. Happy Holidays to all and thanks!",
+    // "imageSrc": "assets/images/icons/food-truck.png"
+}
+
+setAlert(xmasAlert);
+
+setAlert(NYAlert);
 
 
