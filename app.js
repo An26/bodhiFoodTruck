@@ -102,6 +102,10 @@ function setAlert(params) {
         params.elementSelector.find('.image').css('display', 'block');
         params.elementSelector.find('.image img').attr('src', params.imageSrc);
     }
+
+    if (typeof params.imageWidth !== 'undefined') {
+        params.elementSelector.find('.image').css('width', params.imageWidth + "%");
+    }
 }
 
 var thanksgivingAlert = {
@@ -131,8 +135,17 @@ var NYAlert = {
     // "imageSrc": "assets/images/icons/food-truck.png"
 }
 
-setAlert(xmasAlert);
+let vietNYAlert = {
+    "startDate": "1/06/2020",
+    "endDate": "2/04/2020",
+    "elementSelector": $('.newsAlert.alert'),
+    "headerHTML": "<strong>**Vietnamese New Year**</strong> <br />",
+    "message": "We will closed on January 22nd and will resume regular hours on February 5th. <br /> May the new lunar moon bring you much joy and luck this Vietnamese New Year on January 25th, 2020.",
+    "imageSrc": "assets/images/lantern.svg",
+    "imageWidth" : 20
+}
 
-setAlert(NYAlert);
+setAlert(vietNYAlert);
+
 
 
