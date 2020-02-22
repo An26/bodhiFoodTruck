@@ -67,19 +67,6 @@ switch (currentDate.weekDay) {
 
 // provide mm/dd/yyyy string as startday and endday parameters
 function setAlert(params) {
-    // var beginTime = {
-    //     "month": parseInt(params.startDate.split("/")[0]),
-    //     "day": parseInt(params.startDate.split("/")[1]),
-    //     "year": parseInt(params.startDate.split("/")[2]),
-    //     "MMDDYYYY": params.startDate.split("/")[0] + "/" + params.startDate.split("/")[1] + "/" + params.startDate.split("/")[2]
-    // }
-
-    // var endTime = {
-    //     "month": parseInt(params.endDate.split('/')[0]),
-    //     "day": parseInt(params.endDate.split('/')[1]),
-    //     "year": parseInt(params.endDate.split('/')[2]),
-    //     "MMDDYYYY": params.endDate.split('/')[0] + "/" + params.endDate.split('/')[1] + "/" + params.endDate.split('/')[2]
-    // }
 
     var endDate = new Date(params.endDate);
 
@@ -145,7 +132,8 @@ let vietNYAlert = {
     "imageWidth" : 20
 }
 
-setAlert(vietNYAlert);
 
-
-
+document.addEventListener("DOMContentLoaded", function(){
+    //setAlert(vietNYAlert);
+    document.getElementsByClassName('copywriteYear')[0].textContent = currentDate.year;
+});
