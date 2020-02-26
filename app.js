@@ -132,8 +132,16 @@ let vietNYAlert = {
     "imageWidth" : 20
 }
 
+let renewPermitAlert = {
+    "startDate": "02/26/2020",
+    "endDate": "3/04/2020",
+    "elementSelector": $('.newsAlert.alert'),
+    "headerHTML": "<strong>**UPDATE**</strong> <br />",
+    "message": "We will closed as of today(2/26) until next Wednesday(3/4) due to truck maintenance. Please give us some time and we will be back in tip-top shape next week. Thank you for your patience.",
+};
+
 
 document.addEventListener("DOMContentLoaded", function(){
-    //setAlert(vietNYAlert);
+    setAlert(renewPermitAlert);
     document.getElementsByClassName('copywriteYear')[0].textContent = currentDate.year;
 });
