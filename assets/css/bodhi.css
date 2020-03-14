@@ -267,3 +267,7 @@ footer p {
     font-size: 1rem;
     text-align: left;
 }
+
+#menu .menu-type .row {
+    padding-bottom: 3rem;
+}
