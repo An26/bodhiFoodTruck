@@ -140,8 +140,16 @@ let renewPermitAlert = {
     "message": "We will closed as of today(2/26) until next Wednesday(3/4) due to truck maintenance. Please give us some time and we will be back in tip-top shape next week. Thank you for your patience.",
 };
 
+let covid19Alert = {
+    "startDate": "03/18/2020",
+    "endDate": "3/31/2020",
+    "elementSelector": $('.newsAlert.alert'),
+    "headerHTML": "<strong>**ATTENTION**</strong> <br />",
+    "message": "In an attempt to keep our staff and the public as safe as possible, we have decided to close our doors until the end of this month, 3/31/2020. Please refer back here for any updates."
+}
+
 
 document.addEventListener("DOMContentLoaded", function(){
-    setAlert(renewPermitAlert);
+    setAlert(covid19Alert);
     document.getElementsByClassName('copywriteYear')[0].textContent = currentDate.year;
 });
