@@ -145,7 +145,7 @@ let covid19Alert = {
     "endDate": "3/31/2020",
     "elementSelector": $('.newsAlert.alert'),
     "headerHTML": "<strong>**ATTENTION**</strong> <br />",
-    "message": "In an attempt to keep our staff and the public as safe as possible, we have decided to close our doors until the end of this month, 3/31/2020. Please refer back here for any updates."
+    "message": "In an attempt to keep our staff and the public as safe we are limiting our working hours from 10am - 3pm until the end of the month. We are making food for pick up only. Check back here for any updates."
 }
 
 
