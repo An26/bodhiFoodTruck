@@ -141,15 +141,24 @@ let renewPermitAlert = {
 };
 
 let covid19Alert = {
-    "startDate": "03/18/2020",
+    "startDate": "03/24/2020",
     "endDate": "3/31/2020",
     "elementSelector": $('.newsAlert.alert'),
     "headerHTML": "<strong>**ATTENTION**</strong> <br />",
-    "message": "In an attempt to keep our staff and the public as safe we are limiting our working hours from 10am - 3pm until the end of the month. We are making food for pick up only. Check back here for any updates."
+    "message": "In an attempt to adapt to the times, keep our staff and the public as safe as possible we are taking orders via telephone only. We can only offer a limited menu at this time due to shortages in ingredients. Thank you so much for your patience and loyalty. <br /><br /> Call us at: <strong>(512) 696 - 1807</strong> <br /> Lunch Orders: Call in from 9am - 11am / Pick up at our trailer at 12:00pm. <br /> Dinner Orders: Call in from 2pm - 5pm / Pick up at our trailer at 6:00pm. <br />"
+}
+
+let covid19Alert2 = {
+    "startDate": "03/24/2020",
+    "endDate": "3/31/2020",
+    "elementSelector": $('.newsAlert.alert2'),
+    "headerHTML": "<strong>Temporary Menu</strong> <br />",
+    "message": "<strong>A2</strong> - Vietnamese Dumpings<br />  <strong>A3</strong> - Golden Fried Roll (Cha Giò)<br />  <strong>BM</strong> - Bao<br />  <strong>V1</strong> - Savory Meatless BBQ (Bún Thịt Nướng)<br />  <strong>V3</strong> - Shredded Vegetables and Tofu Protein (Bún Tằm Bì)<br />  <strong>V4</strong>  Fermented Mixed Vegetables (Bún Mắm Thái)<br />  <strong>N1</strong> - Bodhi Spicy Noodle Soup (Bún Huế)<br />  <strong>N9</strong> - Kim Chi Soup with Dumplings<br />  <strong>S1</strong> - Vegan Yellow Noodle<br />  <strong>S2</strong> - White Rice Noodle Stir Fry<br />  <strong>S3</strong> - Vegan Glass Noodle<br />  <strong>S4</strong> - Mix Vegetable Stir Fry<br />  <strong>S5</strong> - Seitan Broccoli Stir Fry<br />  <strong>S6</strong> - Curried Singapore Noodles<br />  <strong>D4</strong> - Vietnamese Coffee (Cà Phê)<br />  <strong>D5</strong> - Iced Green Milk Tea Boba (Trà Thái Boba)"
 }
 
 
 document.addEventListener("DOMContentLoaded", function(){
     setAlert(covid19Alert);
+    setAlert(covid19Alert2);
     document.getElementsByClassName('copywriteYear')[0].textContent = currentDate.year;
 });
