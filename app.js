@@ -145,7 +145,7 @@ let covid19Alert = {
     "endDate": "3/31/2020",
     "elementSelector": $('.newsAlert.alert'),
     "headerHTML": "<strong>**ATTENTION**</strong> <br />",
-    "message": "In an attempt to adapt to the times, keep our staff and the public as safe as possible we are taking orders via telephone only. We can only offer a limited menu at this time due to shortages in ingredients. Thank you so much for your patience and loyalty. <br /><br /> Call us at: <strong>(512) 696 - 1807</strong> <br /> Lunch Orders: Call in from 9am - 11am / Pick up at our trailer at 12:00pm. <br /> Dinner Orders: Call in from 2pm - 5pm / Pick up at our trailer at 6:00pm. <br />"
+    "message": "In an attempt to adapt to the times, keep our staff and the public as safe as possible we are taking orders via telephone only. We can only offer a limited menu at this time due to shortages in ingredients. Thank you so much for your patience and loyalty. <br /><br /> Call us at: <strong>(512) 696 - 1807</strong> <br /> Lunch Orders: Call in from 9am - 11am / Pick up at the same location but at the neighboring yoga studio, Warrior II Yoga, at 12:00pm. <br /> Dinner Orders: Call in from 2pm - 5pm / Pick up at the same location but at the neighboring yoga studio, Warrior II Yoga, at 6:00pm. <br />"
 }
 
 let covid19Alert2 = {
