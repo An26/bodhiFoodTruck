@@ -271,3 +271,90 @@ footer p {
 #menu .menu-type .row {
     padding-bottom: 3rem;
 }
+
+#menu {
+    background: #D7EFE4;
+}
+
+#menu .card.menu-type {
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#menu .card.menu-type .card-header h2 {
+    padding: 0.5rem;
+    margin: 0;
+    line-height: 1rem;
+}
+
+#menu .card.menu-type button.btn {
+    padding: 0;
+    margin: 0;
+}
+
+[data-toggle="collapse"] i:before {
+    content: "\f068";
+  }
+  
+  [data-toggle="collapse"].collapsed i:before {
+    content: "\f067";
+  }
+  
+  #accordion .card-header {
+    margin-bottom: 8px;
+  }
+  #accordion .accordion-title {
+    position: relative;
+    display: block;
+    padding: 8px 0 8px 50px;
+    background: #344E41;
+    border-radius: 8px;
+    overflow: hidden;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    width: 100%;
+    text-align: left;
+    transition: all 0.4s ease-in-out;
+  }
+  #accordion .accordion-title i {
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    left: 0;
+    color: #fff;
+    background: radial-gradient(rgba(58, 90, 64, 0.8), #344E41);
+    text-align: center;
+    border-right: 1px solid transparent;
+  }
+
+  #accordion .accordion-title:hover {
+    padding-left: 60px;
+    background: #344E41;
+    color: #fff;
+  }
+  #accordion .accordion-title:hover i {
+    border-right: 1px solid #fff;
+  }
+  #accordion .accordion-body {
+    padding: 40px 55px;
+  }
+  #accordion .accordion-body ul {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  #accordion .accordion-body li {
+    padding-left: 1.2rem;
+    text-indent: -1.2rem;
+  }
+  #accordion .accordion-body li:before {
+    content: "\f10a";
+    padding-right: 5px;
+    font-family: "Flaticon";
+    font-size: 16px;
+    font-style: normal;
+    color: #213744;
+  }
+  
