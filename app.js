@@ -137,7 +137,7 @@ let covid19Alert = {
     "endDate": "05/02/2020",
     "elementSelector": $('.newsAlert.alert'),
     "headerHTML": "<strong>**ATTENTION**</strong> <br />",
-    "message": "In an attempt to keep our staff and the public as safe as possible we are closing our food truck until May 1st, 2020. Thank you for your patience and please come back here for updates."
+    "message": "In an attempt to keep our staff and the public as safe as possible we are partially closing our food truck until May 1st, 2020. Thank you for your patience and please come back here for updates."
 }
 
 let onlineOrdering = {
@@ -145,7 +145,7 @@ let onlineOrdering = {
     "endDate": "05/15/2020",
     "elementSelector": $('.newsAlert.alert2'),
     "headerHTML": "<strong>-SERVICE ANNOUNCEMENT-</strong> <br />",
-    "message": "We will be opening our doors virtually online this week, beginning 4/22/2020. We will be availible on via Uber Eats and Grubhub only. Stay safe, and full."
+    "message": "Our food will be availible to order online, beginning 4/22/2020. We will be availible on via Uber Eats and Grubhub only. Stay safe, and full."
 }
 
 
