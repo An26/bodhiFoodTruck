@@ -141,7 +141,7 @@ let covid19Alert = {
 }
 
 let onlineOrdering = {
- "startDate": "04/22/2020",
+ "startDate": "04/20/2020",
     "endDate": "05/15/2020",
     "elementSelector": $('.newsAlert.alert2'),
     "headerHTML": "<strong>-SERVICE ANNOUNCEMENT-</strong> <br />",
