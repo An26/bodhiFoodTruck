@@ -140,8 +140,17 @@ let covid19Alert = {
     "message": "In an attempt to keep our staff and the public as safe as possible we are closing our food truck until May 1st, 2020. Thank you for your patience and please come back here for updates."
 }
 
+let onlineOrdering = {
+ "startDate": "04/22/2020",
+    "endDate": "05/15/2020",
+    "elementSelector": $('.newsAlert.alert2'),
+    "headerHTML": "<strong>-SERVICE ANNOUNCEMENT-</strong> <br />",
+    "message": "We will be opening our doors virtually online this week, beginning 4/22/2020. We will be availible on via Uber Eats and Grubhub only. Stay safe, and full."
+}
+
 
 document.addEventListener("DOMContentLoaded", function(){
     setAlert(covid19Alert);
+    setAlert(onlineOrdering);
     document.getElementsByClassName('copywriteYear')[0].textContent = currentDate.year;
 });
