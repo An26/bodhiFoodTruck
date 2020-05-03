@@ -70,7 +70,7 @@ function setAlert(params) {
 
     var endDate = new Date(params.endDate);
 
-    if (date < endDate || date === endDate) {
+    if (date <= endDate) {
         if (params.headerHTML) {
             params.elementSelector.find('.alert').html(params.headerHTML).append(params.message);
         } else {
@@ -133,16 +133,16 @@ let vietNYAlert = {
 }
 
 let covid19Alert = {
-    "startDate": "03/24/2020",
-    "endDate": "05/02/2020",
+    "startDate": "05/02/2020",
+    "endDate": "05/31/2020",
     "elementSelector": $('.newsAlert.alert'),
-    "headerHTML": "<strong>**ATTENTION**</strong> <br />",
-    "message": "In an attempt to keep our staff and the public as safe as possible we are partially closing our food truck until May 1st, 2020. Thank you for your patience and please come back here for updates."
+    "headerHTML": "<strong>**REOPENING UPDATE**</strong> <br />",
+    "message": "As per city recommendations, we will be re-opening our food truck starting this Wednesday, May 6th. Please be sure to bring your facial masks and give us a long awaited, Hello! We will be open from 11am until 4pm Wednesdays through Saturdays for pick-up only."
 }
 
 let onlineOrdering = {
  "startDate": "04/20/2020",
-    "endDate": "05/15/2020",
+    "endDate": "05/06/2020",
     "elementSelector": $('.newsAlert.alert2'),
     "headerHTML": "<strong>-SERVICE ANNOUNCEMENT-</strong> <br />",
     "message": "Our food will be availible to order online, beginning 4/22/2020. We will be availible on via Uber Eats and Grubhub only. Stay safe, and full."
