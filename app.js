@@ -161,7 +161,7 @@ let reopening = {
     "endDate": "06/01/2020",
     "elementSelector": $('.newsAlert.alert'),
     "headerHTML": "<strong>-SERVICE ANNOUNCEMENT-</strong> <br />",
-    "message": "We will be reopening our doors this Wednesday May 17th. We will be working from 11am - 6pm Wednesday to Saturdays. Face masks and six feet social distancing is required. Thank you and see you all soon!"
+    "message": "We will be reopening our doors this Wednesday May 20th. We will be working from 11am - 6pm Wednesday to Saturdays. Face masks and six feet social distancing is required. Thank you and see you all soon!"
 }
 
 document.addEventListener("DOMContentLoaded", function(){
