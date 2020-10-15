@@ -175,7 +175,8 @@ hr {
 }
 
 .other-week {
-    color: #6BC665;
+    color: rgb(82, 122, 8);
+    font-weight: 800;
 }
 
 .food-truck-img {
