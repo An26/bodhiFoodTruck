@@ -96,12 +96,12 @@ function setAlert(params) {
 }
 
 var thanksgivingAlert = {
-    "startDate": "11/21/2019",
-    "endDate": "12/04/2019",
+    "startDate": "11/11/2020",
+    "endDate": "12/03/2020",
     "elementSelector": $('.newsAlert.alert'),
     "headerHTML": "<strong>**IMPORTANT UPDATE**</strong> <br />",
-    "message": "We will be closed from <strong>November 27th</strong> until <strong>December 4th</strong> for Thanksgiving Holidays.",
-    "imageSrc": "assets/images/icons/food-truck.png"
+    "message": "We will be closed from <strong>November 12th</strong> until <strong>December 3rd</strong> for the Thanksgiving Holiday.",
+    "imageSrc": "assets/images/icons/turkey.svg"
 }
 
 var xmasAlert = {
@@ -165,6 +165,6 @@ let reopening = {
 }
 
 document.addEventListener("DOMContentLoaded", function(){
-    setAlert(reopening);
+    setAlert(thanksgivingAlert);
     document.getElementsByClassName('copywriteYear')[0].textContent = currentDate.year;
 });
