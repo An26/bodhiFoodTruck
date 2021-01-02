@@ -368,3 +368,42 @@ footer p {
     color: #213744;
   }
   
+
+  /* weekly specials css */
+  .ws-container {
+      padding: 1.5rem 2.2rem;
+      background: #EA7F25;
+      color: #fff;
+      border-radius: 5px;
+      border: solid 1px rgb(172, 69, 0);
+      box-shadow: 5px 5px 10px rgba(141, 45, 0, 0.5);
+      margin-bottom: 3rem;
+      margin-top: 2rem;
+      font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .ws-container p.ws-title {
+    position: absolute;
+    top: -26px;
+    left: 0px;
+    text-align: left;
+    color: #7A4B72;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  .ws-container p.item-description {
+    color: #fff;
+  }
+
+  .ws-container h2 {
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 800;
+  }
+
+  .ws-container img {
+    box-shadow: 3px 2px 5px rgba(92, 92, 92, 0.5);
+    border-radius: 10%;
+  }
