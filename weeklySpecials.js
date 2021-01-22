@@ -89,7 +89,7 @@ let week01122021a = {
   "uid": "S9",
   "name": "S9. Mì Xào Giòn",
   "imageLocation": "assets/images/weeklySpecials/S9_MiXao.jpeg",
-  "description": "Combination of veggies and meatless protiene stir fried on a bed of crispy noodles."
+  "description": "Combination of veggies and meatless protein stir-fried on a bed of crispy noodles."
 }
 
 let week01122021b = {
