@@ -44,45 +44,61 @@ function addSpecial (item) {
 //   "description": "Hot, simple, soup for the cold season. Try our hot soup."
 // }
 
+// let week01122021a = {
+//   "endDate": "01/19/2021",
+//   "uid": "DS7",
+//   "name": "DS7. Banh Bo",
+//   "imageLocation": "assets/images/weeklySpecials/DS7_Banh Bo.jpeg",
+//   "description": "Steamed rice cake served with sweet coconut sauce."
+// }
+
+// let week01122021b = {
+//   "endDate": "01/19/2021",
+//   "uid": "S7",
+//   "name": "S7. Chow Mein",
+//   "imageLocation": "assets/images/weeklySpecials/S7_Chow Mein.jpeg",
+//   "description": "Stir fried thick noodles served with fresh veggies."
+// }
+
+// let week01122021c = {
+//   "endDate": "01/19/2021",
+//   "uid": "S8",
+//   "name": "S8. Bap",
+//   "imageLocation": "assets/images/weeklySpecials/S8_Bap.jpeg",
+//   "description": "Our take on street corn served with fried shallots."
+// }
+
+// let week01122021d = {
+//   "endDate": "01/19/2021",
+//   "uid": "lb1",
+//   "name": "Sa Xiu by LB",
+//   "imageLocation": "assets/images/weeklySpecials/ByPound_Sa Xiu.jpeg",
+//   "description": "Your favorite meat-less sweet faux-pork can be purchased by the lb."
+// }
+
+// let week01122021e = {
+//   "endDate": "01/19/2021",
+//   "uid": "lb2",
+//   "name": "Bo Vien by LB",
+//   "imageLocation": "assets/images/weeklySpecials/ByPound_Bo Vien.jpeg",
+//   "description": "Your favorite meat-less ball can be purchased by the lb."
+// }
+
 let week01122021a = {
-  "endDate": "01/19/2021",
-  "uid": "DS7",
-  "name": "DS7. Banh Bo",
-  "imageLocation": "assets/images/weeklySpecials/DS7_Banh Bo.jpeg",
-  "description": "Steamed rice cake served with sweet coconut sauce."
+  "endDate": "01/30/2021",
+  "uid": "S9",
+  "name": "S9. Mì Xào Giòn",
+  "imageLocation": "assets/images/weeklySpecials/S9_MiXao.jpeg",
+  "description": "Combination of veggies and meatless protiene stir fried on a bed of crispy noodles."
 }
 
 let week01122021b = {
-  "endDate": "01/19/2021",
-  "uid": "S7",
-  "name": "S7. Chow Mein",
-  "imageLocation": "assets/images/weeklySpecials/S7_Chow Mein.jpeg",
-  "description": "Stir fried thick noodles served with fresh veggies."
-}
-
-let week01122021c = {
-  "endDate": "01/19/2021",
-  "uid": "S8",
-  "name": "S8. Bap",
-  "imageLocation": "assets/images/weeklySpecials/S8_Bap.jpeg",
-  "description": "Our take on street corn served with fried shallots."
-}
-
-let week01122021d = {
-  "endDate": "01/19/2021",
-  "uid": "lb1",
-  "name": "Sa Xiu by LB",
-  "imageLocation": "assets/images/weeklySpecials/ByPound_Sa Xiu.jpeg",
-  "description": "Your favorite meat-less sweet faux-pork can be purchased by the lb."
-}
-
-let week01122021e = {
-  "endDate": "01/19/2021",
-  "uid": "lb2",
-  "name": "Bo Vien by LB",
-  "imageLocation": "assets/images/weeklySpecials/ByPound_Bo Vien.jpeg",
-  "description": "Your favorite meat-less ball can be purchased by the lb."
+  "endDate": "01/30/2021",
+  "uid": "S1",
+  "name": "SP1. Bánh Mì Xíu Mai",
+  "imageLocation": "assets/images/weeklySpecials/SP1_BanhMiSiMai.jpeg",
+  "description": "Vegan meatball stew served with toasted bahn mi."
 }
 
 
-setWeekSpecial([week01122021a, week01122021b, week01122021c, week01122021d, week01122021e]);
+setWeekSpecial([week01122021a, week01122021b]);
