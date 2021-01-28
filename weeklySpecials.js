@@ -36,69 +36,21 @@ function addSpecial (item) {
 
 // The condition to check the end date is exclusive. The end date range is not invcluded in the range.
 
-// ---example object--
-// let week01012021 = {
-//   "endDate": "01/02/2021",
-//   "name": "Hot Soup",
-//   "imageLocation": "assets/images/weeklySpecials/soup.jpg",
-//   "description": "Hot, simple, soup for the cold season. Try our hot soup."
-// }
-
-// let week01122021a = {
-//   "endDate": "01/19/2021",
-//   "uid": "DS7",
-//   "name": "DS7. Banh Bo",
-//   "imageLocation": "assets/images/weeklySpecials/DS7_Banh Bo.jpeg",
-//   "description": "Steamed rice cake served with sweet coconut sauce."
-// }
-
-// let week01122021b = {
-//   "endDate": "01/19/2021",
-//   "uid": "S7",
-//   "name": "S7. Chow Mein",
-//   "imageLocation": "assets/images/weeklySpecials/S7_Chow Mein.jpeg",
-//   "description": "Stir fried thick noodles served with fresh veggies."
-// }
-
-// let week01122021c = {
-//   "endDate": "01/19/2021",
-//   "uid": "S8",
-//   "name": "S8. Bap",
-//   "imageLocation": "assets/images/weeklySpecials/S8_Bap.jpeg",
-//   "description": "Our take on street corn served with fried shallots."
-// }
-
-// let week01122021d = {
-//   "endDate": "01/19/2021",
-//   "uid": "lb1",
-//   "name": "Sa Xiu by LB",
-//   "imageLocation": "assets/images/weeklySpecials/ByPound_Sa Xiu.jpeg",
-//   "description": "Your favorite meat-less sweet faux-pork can be purchased by the lb."
-// }
-
-// let week01122021e = {
-//   "endDate": "01/19/2021",
-//   "uid": "lb2",
-//   "name": "Bo Vien by LB",
-//   "imageLocation": "assets/images/weeklySpecials/ByPound_Bo Vien.jpeg",
-//   "description": "Your favorite meat-less ball can be purchased by the lb."
-// }
-
-let week01122021a = {
-  "endDate": "01/30/2021",
-  "uid": "S9",
-  "name": "S9. Mì Xào Giòn",
-  "imageLocation": "assets/images/weeklySpecials/S9_MiXao.jpeg",
-  "description": "Combination of veggies and meatless protein stir-fried on a bed of crispy noodles."
+let item1 = {
+  "endDate": "02/03/2021",
+  "uid": "R10",
+  "name": "R10. Mì Căn xào Gừng",
+  "imageLocation": "assets/images/weeklySpecials/R11_GingerSeitan.jpeg",
+  "description": "Your choice of seitan or protein stir fried with a soy sauce and ginger sauce. Served with rice and veggies."
 }
 
-let week01122021b = {
-  "endDate": "01/30/2021",
-  "uid": "S1",
-  "name": "SP1. Bánh Mì Xíu Mai",
-  "imageLocation": "assets/images/weeklySpecials/SP1_BanhMiSiMai.jpeg",
-  "description": "Vegan meatball stew served with toasted bahn mi."
+let item2 = {
+  "endDate": "02/03/2021",
+  "uid": "R11",
+  "name": "R11. Braised Tofu",
+  "imageLocation": "assets/images/weeklySpecials/R10_BraisedTofu.jpeg",
+  "description": "Rolled up tofu strips that is braised for hours in a sweet and salty soy-caramel sauce. Served with a side of rice and steamed veggies."
 }
 
 
-setWeekSpecial([week01122021a, week01122021b]);
+setWeekSpecial([item1, item2]);
