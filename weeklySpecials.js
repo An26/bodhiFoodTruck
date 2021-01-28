@@ -22,7 +22,7 @@ function addSpecial (item) {
         specialItem.find('.item-image').css('display', 'none');
       }
   
-      if (item.description) {specialItem.find('.item-description').text(item.description)}
+      if (item.description) {specialItem.find('.item-description').html(item.description)}
       
       specialItem.find('.ws-endDate span').text(item.endDate);
 
@@ -37,7 +37,7 @@ function addSpecial (item) {
 // The condition to check the end date is exclusive. The end date range is not invcluded in the range.
 
 let itemA = {
-  "endDate": "02/03/2021",
+  "endDate": "02/04/2025",
   "uid": "S8",
   "name": "S8. Bap",
   "imageLocation": "assets/images/weeklySpecials/S8_Bap.jpeg",
@@ -45,7 +45,7 @@ let itemA = {
 }
 
 let itemB = {
-  "endDate": "02/03/2021",
+  "endDate": "02/04/2025",
   "uid": "S9",
   "name": "S9. Mì Xào Giòn",
   "imageLocation": "assets/images/weeklySpecials/S9_MiXao.jpeg",
@@ -53,20 +53,20 @@ let itemB = {
 }
 
 let itemC = {
-  "endDate": "02/03/2021",
+  "endDate": "02/04/2025",
   "uid": "S1",
   "name": "SP1. Bánh Mì Xíu Mai",
   "imageLocation": "assets/images/weeklySpecials/SP1_BanhMiSiMai.jpeg",
   "description": "Vegan meatball stew served with toasted bahn mi."
 }
 
-let item1 = {
-  "endDate": "02/03/2021",
+let item2 = {
+  "endDate": "02/04/2025",
   "uid": "R10",
-  "name": "R10. Mì Căn xào Hừng",
-  "imageLocation": "assets/images/weeklySpecials/R11_GingerSeitan.jpeg",
-  "description": "Your choice of seitan or protein stir fried with a soy sauce and ginger sauce. Served with rice and veggies."
+  "name": "R10. Braised Tofu",
+  "imageLocation": "assets/images/weeklySpecials/R10_BraisedTofu.jpeg",
+  "description": "Rolled up tofu strips that is braised for hours in a sweet and salty soy-caramel sauce. Served with a side of rice and steamed veggies."
 }
 
 
-setWeekSpecial([itemA, itemB, itemC, item1]);
+setWeekSpecial([itemA, itemB, itemC, item2, lunchSpecial]);

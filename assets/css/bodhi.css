@@ -375,9 +375,7 @@ footer p {
 
   /* weekly specials css */
   .ws-inner {
-      /* padding: 1.5rem 2.2rem; */
-      /* background: #EA7F25; */
-      color: #fff;
+      /* color: #fff; */
       border-radius: 5px;
       border: solid 1px rgba(172, 69, 0, 0.774);
       box-shadow: 5px 5px 10px rgba(141, 45, 0, 0.5);
