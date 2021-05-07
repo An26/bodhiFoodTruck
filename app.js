@@ -157,14 +157,15 @@ let brokenTruck = {
 }
 
 let reopening = {
-    "startDate": "05/17/2020",
-    "endDate": "06/01/2020",
+    "startDate": "05/06/2021",
+    "endDate": "06/03/2020",
     "elementSelector": $('.newsAlert.alert'),
     "headerHTML": "<strong>-SERVICE ANNOUNCEMENT-</strong> <br />",
-    "message": "We will be reopening our doors this Wednesday May 20th. We will be working from 11am - 6pm Wednesday to Saturdays. Face masks and six feet social distancing is required. Thank you and see you all soon!"
+    "message": "We will be closed from May 20th - June 3nd. Thank you for your patience!"
 }
 
+
 document.addEventListener("DOMContentLoaded", function(){
-    setAlert(vietNYAlert);
+    setAlert(reopening);
     document.getElementsByClassName('copywriteYear')[0].textContent = currentDate.year;
 });
