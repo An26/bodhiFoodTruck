@@ -158,7 +158,7 @@ let brokenTruck = {
 
 let reopening = {
     "startDate": "05/06/2021",
-    "endDate": "06/03/2020",
+    "endDate": "06/03/2021",
     "elementSelector": $('.newsAlert.alert'),
     "headerHTML": "<strong>-SERVICE ANNOUNCEMENT-</strong> <br />",
     "message": "We will be closed from May 20th - June 3nd. Thank you for your patience!"
