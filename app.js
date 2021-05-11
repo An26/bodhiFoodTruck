@@ -158,10 +158,10 @@ let brokenTruck = {
 
 let reopening = {
     "startDate": "05/06/2021",
-    "endDate": "06/03/2021",
+    "endDate": "06/09/2021",
     "elementSelector": $('.newsAlert.alert'),
     "headerHTML": "<strong>-SERVICE ANNOUNCEMENT-</strong> <br />",
-    "message": "We will be closed from May 20th - June 3rd. Thank you for your patience!"
+    "message": "We will be closed from May 20th - June 9th. Thank you for your patience!"
 }
 
 
