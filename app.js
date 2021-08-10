@@ -165,7 +165,16 @@ let reopening = {
 }
 
 
+let LeVuLan = {
+    "startDate": "08/10/2021",
+    "endDate": "08/22/2021",
+    "elementSelector": $('.newsAlert.alert'),
+    "headerHTML": "<strong>-SERVICE ANNOUNCEMENT-</strong> <br />",
+    "message": "We will be closed from August 19th until August 21st for Le Vu Lan. A festival celebrating our living and past parents."
+}
+
+
 document.addEventListener("DOMContentLoaded", function(){
-    setAlert(reopening);
+    setAlert(LeVuLan);
     document.getElementsByClassName('copywriteYear')[0].textContent = currentDate.year;
 });
