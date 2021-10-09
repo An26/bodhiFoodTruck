@@ -60,13 +60,13 @@ let itemC = {
   "description": "Vegan meatball stew served with toasted bahn mi."
 }
 
-let item2 = {
-  "endDate": "02/04/2025",
-  "uid": "R10",
-  "name": "R10. Braised Tofu",
-  "imageLocation": "assets/images/weeklySpecials/R10_BraisedTofu.jpeg",
-  "description": "Rolled up tofu strips that is braised for hours in a sweet and salty soy-caramel sauce. Served with a side of rice and steamed veggies."
-}
+// let item2 = {
+//   "endDate": "02/04/2025",
+//   "uid": "R10",
+//   "name": "R10. Braised Tofu",
+//   "imageLocation": "assets/images/weeklySpecials/R10_BraisedTofu.jpeg",
+//   "description": "Rolled up tofu strips that is braised for hours in a sweet and salty soy-caramel sauce. Served with a side of rice and steamed veggies."
+// }
 
 
-setWeekSpecial([itemA, itemB, itemC, item2, lunchSpecial]);
+setWeekSpecial([itemA, itemB, itemC, lunchSpecial]);
