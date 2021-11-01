@@ -68,5 +68,37 @@ let itemC = {
 //   "description": "Rolled up tofu strips that is braised for hours in a sweet and salty soy-caramel sauce. Served with a side of rice and steamed veggies."
 // }
 
+// let item3 = {
+//   "endDate": "02/04/2025",
+//   "uid": "R11",
+//   "name": "R11. Ginger protein (Mì Căn xào Gừng)",
+//   "imageLocation": "assets/images/weeklySpecials/R10_BraisedTofu.jpeg",
+//   "description": "Seitan or Soy protein stewed with ginger served with rice and veggies."
+// }
 
-setWeekSpecial([itemA, itemB, itemC, lunchSpecial]);
+let item4 = {
+  "endDate": "02/04/2025",
+  "uid": "R9",
+  "name": "R9. Braised Fish-less Lemongrass",
+  "imageLocation": "assets/images/weeklySpecials/r9.jpeg",
+  "description": "Soy and protein wrap with seaweed, lemongrass  served with white  rice, veggies and chef's sauce."
+}
+
+let item5 = {
+  "endDate": "02/04/2025",
+  "uid": "R12",
+  "name": "R12. Orange Seitan Nuggets",
+  "imageLocation": "assets/images/weeklySpecials/r12.jpeg",
+  "description": "Orange Sauce over breaded and fried seitan served with white rice and veggies."
+}
+
+let item6 = {
+  "endDate": "02/04/2025",
+  "uid": "R16",
+  "name": "R16. Sweet and Sour",
+  "imageLocation": "assets/images/weeklySpecials/r16.jpeg",
+  "description": "Our take on sweet and sour chinese dish served with rice and veggies."
+}
+
+
+setWeekSpecial([itemA, itemB, itemC, lunchSpecial, item4, item5, item6]);
