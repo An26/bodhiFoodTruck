@@ -52,13 +52,13 @@ let itemB = {
   "description": "Combination of veggies and meatless protein stir-fried on a bed of crispy noodles."
 }
 
-let itemC = {
-  "endDate": "02/04/2025",
-  "uid": "S1",
-  "name": "SP1. Bánh Mì Xíu Mai",
-  "imageLocation": "assets/images/weeklySpecials/SP1_BanhMiSiMai.jpeg",
-  "description": "Vegan meatball stew served with toasted bahn mi."
-}
+// let itemC = {
+//   "endDate": "02/04/2025",
+//   "uid": "S1",
+//   "name": "SP1. Bánh Mì Xíu Mai",
+//   "imageLocation": "assets/images/weeklySpecials/SP1_BanhMiSiMai.jpeg",
+//   "description": "Vegan meatball stew served with toasted bahn mi."
+// }
 
 // let item2 = {
 //   "endDate": "02/04/2025",
@@ -86,19 +86,19 @@ let item4 = {
 
 let item5 = {
   "endDate": "02/04/2025",
-  "uid": "R12",
-  "name": "R12. Orange Seitan Nuggets",
+  "uid": "R16",
+  "name": "R16. Orange Seitan Nuggets",
   "imageLocation": "assets/images/weeklySpecials/r12.jpeg",
   "description": "Orange Sauce over breaded and fried seitan served with white rice and veggies."
 }
 
 let item6 = {
   "endDate": "02/04/2025",
-  "uid": "R16",
-  "name": "R16. Sweet and Sour",
+  "uid": "R12",
+  "name": "R12. Sweet and Sour",
   "imageLocation": "assets/images/weeklySpecials/r16.jpeg",
   "description": "Our take on sweet and sour chinese dish served with rice and veggies."
 }
+ 
 
-
-setWeekSpecial([itemA, itemB, itemC, lunchSpecial, item4, item5, item6]);
+setWeekSpecial([itemA, itemB, lunchSpecial, item4, item6, item5]);
