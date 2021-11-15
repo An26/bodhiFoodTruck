@@ -72,9 +72,10 @@ function setAlert(params) {
 
     if (date <= endDate) {
         if (params.headerHTML) {
-            params.elementSelector.find('.alert').html(params.headerHTML).append(params.message);
-        } else {
-            params.elementSelector.find('.alert').append(params.message);
+            params.elementSelector.find('.alert .alertHeader').append(params.headerHTML);
+        } 
+        if (params.message) {
+            params.elementSelector.find('.alert .alertMessage').append(params.message);
         }
         params.elementSelector.css('display', 'block');
         $(".alert").css('display', 'block');
@@ -93,6 +94,15 @@ function setAlert(params) {
     if (typeof params.imageWidth !== 'undefined') {
         params.elementSelector.find('.image').css('width', params.imageWidth + "%");
     }
+}
+
+var WinterHolidayAlert = {
+    "startDate": "11/15/2021",
+    "endDate": "1/06/20222",
+    "elementSelector": $('.newsAlert.alert'),
+    "headerHTML": "WINTER HOLIDAY",
+    "message": "We will be closed from <strong>November 25th, 2021</strong> until <strong>January 3rd, 2022</strong> for the holidays. <br /> Bless you and your family this season and have a happy new year!",
+    "imageSrc": "assets/images/icons/food-truck.png"
 }
 
 var thanksgivingAlert = {
@@ -175,6 +185,6 @@ let LeVuLan = {
 
 
 document.addEventListener("DOMContentLoaded", function(){
-    setAlert(LeVuLan);
+    setAlert(WinterHolidayAlert);
     document.getElementsByClassName('copywriteYear')[0].textContent = currentDate.year;
 });
