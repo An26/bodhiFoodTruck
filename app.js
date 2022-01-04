@@ -101,7 +101,7 @@ var WinterHolidayAlert = {
     "endDate": "1/06/20222",
     "elementSelector": $('.newsAlert.alert'),
     "headerHTML": "WINTER HOLIDAY",
-    "message": "We will be closed from <strong>November 25th, 2021</strong> until <strong>January 3rd, 2022</strong> for the holidays. <br /> Bless you and your family this season and have a happy new year!",
+    "message": "We will be closed from <strong>November 25th, 2021</strong> until <strong>January 6th, 2022</strong> for the holidays. <br /> Bless you and your family this season and have a happy new year!",
     "imageSrc": "assets/images/icons/food-truck.png"
 }
 
