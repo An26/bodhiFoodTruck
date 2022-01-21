@@ -133,11 +133,11 @@ var NYAlert = {
 }
 
 let vietNYAlert = {
-    "startDate": "2/11/2021",
-    "endDate": "2/25/2021",
+    "startDate": "1/21/2022",
+    "endDate": "2/10/2022",
     "elementSelector": $('.newsAlert.alert'),
-    "headerHTML": "<strong>**Vietnamese New Year**</strong> <br />",
-    "message": "We will closed on February 11th until February 24th. <br /> May the new lunar moon bring you much joy and luck this Vietnamese New Year on February 12th, 2021.",
+    "headerHTML": "<strong>**Lunar New Year**</strong> <br />",
+    "message": "We will closed on <strong>January 27th until February 10th</strong> to celebrate Lunar New Year! <br /> May the new lunar moon bring you much joy and luck this new year!",
     "imageSrc": "assets/images/lantern.svg",
     "imageWidth" : 20
 }
@@ -185,6 +185,6 @@ let LeVuLan = {
 
 
 document.addEventListener("DOMContentLoaded", function(){
-    setAlert(WinterHolidayAlert);
+    setAlert(vietNYAlert);
     document.getElementsByClassName('copywriteYear')[0].textContent = currentDate.year;
 });
