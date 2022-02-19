@@ -100,5 +100,20 @@ let item6 = {
   "description": "Our take on sweet and sour chinese dish served with rice and veggies."
 }
  
+let item7 = {
+  "endDate": "02/04/2025",
+  "uid": "Char Xiu",
+  "name": "Char Xiu by the lb",
+  "imageLocation": "assets/images/weeklySpecials/ByPound_Sa Xiu.jpeg",
+  "description": "Our take on Char Xiu sold by the lb. $15 per lb."
+}
 
-setWeekSpecial([itemA, itemB, lunchSpecial, item4, item6, item5]);
+let item8 = {
+  "endDate": "02/04/2025",
+  "uid": "Bo Vien",
+  "name": "Bo Vien by the lb",
+  "imageLocation": "assets/images/weeklySpecials/ByPound_Bo Vien.jpeg",
+  "description": "Our take on vietnamese meatballs (Bo Vien) sold by the lb. $13 per lb."
+}
+
+setWeekSpecial([itemA, itemB, lunchSpecial, item4, item6, item5, item7, item8]);
