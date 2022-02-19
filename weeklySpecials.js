@@ -41,7 +41,7 @@ let itemA = {
   "uid": "S8",
   "name": "S8. Bap",
   "imageLocation": "assets/images/weeklySpecials/S8_Bap.jpeg",
-  "description": "Our take on street corn served with fried shallots."
+  "description": "Our take on street corn. Pan cooked and fried with spices served with fried shallots and herbs. Very tasty!"
 }
 
 let itemB = {
@@ -102,7 +102,7 @@ let item6 = {
  
 let item7 = {
   "endDate": "02/04/2025",
-  "uid": "Char Xiu",
+  "uid": "Char_Xiu",
   "name": "Char Xiu by the lb",
   "imageLocation": "assets/images/weeklySpecials/ByPound_Sa Xiu.jpeg",
   "description": "Our take on Char Xiu sold by the lb. $15 per lb."
@@ -110,7 +110,7 @@ let item7 = {
 
 let item8 = {
   "endDate": "02/04/2025",
-  "uid": "Bo Vien",
+  "uid": "Bo_Vien",
   "name": "Bo Vien by the lb",
   "imageLocation": "assets/images/weeklySpecials/ByPound_Bo Vien.jpeg",
   "description": "Our take on vietnamese meatballs (Bo Vien) sold by the lb. $13 per lb."
