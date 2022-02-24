@@ -383,6 +383,7 @@ footer p {
       box-shadow: 5px 5px 10px rgba(141, 45, 0, 0.5);
       margin: 3% 0%;
       font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      min-height: 45rem;
   }
 
   .ws-container p.ws-title {

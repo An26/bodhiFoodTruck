@@ -36,21 +36,21 @@ function addSpecial (item) {
 
 // The condition to check the end date is exclusive. The end date range is not invcluded in the range.
 
-let itemA = {
-  "endDate": "02/04/2025",
-  "uid": "S8",
-  "name": "S8. Bap",
-  "imageLocation": "assets/images/weeklySpecials/S8_Bap.jpeg",
-  "description": "Our take on street corn. Pan cooked and fried with spices served with fried shallots and herbs. Very tasty!"
-}
+// let itemS8 = {
+//   "endDate": "02/04/2025",
+//   "uid": "S8",
+//   "name": "S8. Bap",
+//   "imageLocation": "assets/images/weeklySpecials/S8_Bap.jpeg",
+//   "description": "Our take on street corn. Pan cooked and fried with spices served with fried shallots and herbs. Very tasty!"
+// }
 
-let itemB = {
-  "endDate": "02/04/2025",
-  "uid": "S9",
-  "name": "S9. Mì Xào Giòn",
-  "imageLocation": "assets/images/weeklySpecials/S9_MiXao.jpeg",
-  "description": "Combination of veggies and meatless protein stir-fried on a bed of crispy noodles."
-}
+// let itemS9 = {
+//   "endDate": "02/04/2025",
+//   "uid": "S9",
+//   "name": "S9. Mì Xào Giòn",
+//   "imageLocation": "assets/images/weeklySpecials/S9_MiXao.jpeg",
+//   "description": "Combination of veggies and meatless protein stir-fried on a bed of crispy noodles."
+// }
 
 // let itemC = {
 //   "endDate": "02/04/2025",
@@ -89,16 +89,16 @@ let item5 = {
   "uid": "R16",
   "name": "R16. Orange Seitan Nuggets",
   "imageLocation": "assets/images/weeklySpecials/r12.jpeg",
-  "description": "Orange Sauce over breaded and fried seitan served with white rice and veggies."
+  "description": "Sweet and tangy orange sauce over fried seitan with rice and veggies."
 }
 
-let item6 = {
-  "endDate": "02/04/2025",
-  "uid": "R12",
-  "name": "R12. Sweet and Sour",
-  "imageLocation": "assets/images/weeklySpecials/r16.jpeg",
-  "description": "Our take on sweet and sour chinese dish served with rice and veggies."
-}
+// let itemR12 = {
+//   "endDate": "02/04/2025",
+//   "uid": "R12",
+//   "name": "R12. Sweet and Sour",
+//   "imageLocation": "assets/images/weeklySpecials/r16.jpeg",
+//   "description": "Our take on sweet and sour chinese dish served with rice and veggies."
+// }
  
 let item7 = {
   "endDate": "02/04/2025",
@@ -116,4 +116,54 @@ let item8 = {
   "description": "Our take on vietnamese meatballs (Bo Vien) sold by the lb. $13 per lb."
 }
 
-setWeekSpecial([itemA, itemB, lunchSpecial, item4, item6, item5, item7, item8]);
+
+let itemA5 = {
+  "endDate": "02/04/2025",
+  "uid": "A5",
+  "name": "A5. Meatless Sampler Plate",
+  "imageLocation": "assets/images/food/A5.png",
+  "description": "This sampler contains vegan crispy BBQ, chewy tofu, sour papayan soy protein."
+}
+
+let itemA6 = {
+  "endDate": "02/04/2025",
+  "uid": "A6",
+  "name": "A6. Rice Patty",
+  "imageLocation": "assets/images/food/A6.png",
+  "description": "Rice patties made of sticky rice, filled with kale and soy protiens wrapped in banana leaf and steamed then pan fried. A cripsy and chewy snack."
+}
+
+let itemS12 = {
+  "endDate": "02/04/2025",
+  "uid": "S12",
+  "name": "S12. Chow Mein",
+  "imageLocation": "assets/images/food/s12.png",
+  "description": "Spicy seitan stir fried with thick noodles with our tasty peanut sauce. "
+} 
+
+let itemS11 = {
+  "endDate": "02/04/2025",
+  "uid": "S11",
+  "name": "S11. Fresh Papaya Salad",
+  "imageLocation": "assets/images/food/S11.png",
+  "description": "Freshly unrippened chopped papaya served with braised seitan jerky and thai basil."
+} 
+
+let itemR20 = {
+  "endDate": "02/04/2025",
+  "uid": "R20",
+  "name": "R20. Veggie Stuffed Medallions",
+  "imageLocation": "assets/images/food/R20.png",
+  "description": "Stuffed tomatoes, green bell peppers, and bitter melon marinated in a sweet soy sauce. Served with rice."
+} 
+
+let itemR21 = {
+  "endDate": "02/04/2025",
+  "uid": "R21",
+  "name": "R21. Seitan Jerky with Rice",
+  "imageLocation": "assets/images/food/R21.png",
+  "description": "Braised and dried meatless jerky served with rice."
+}
+
+
+setWeekSpecial([lunchSpecial, item4, item5, itemA5, itemA6, itemS11, itemS12, itemR20, itemR21, item7, item8]);
