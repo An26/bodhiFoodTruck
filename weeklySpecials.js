@@ -128,7 +128,7 @@ let itemA5 = {
 let itemA6 = {
   "endDate": "02/04/2025",
   "uid": "A6",
-  "name": "A6. Rice Patty",
+  "name": "A6. Rice Patty - $5.00",
   "imageLocation": "assets/images/food/A6.png",
   "description": "Rice patties made of sticky rice, filled with kale and soy protiens wrapped in banana leaf and steamed then pan fried. A cripsy and chewy snack."
 }
@@ -166,4 +166,4 @@ let itemR21 = {
 }
 
 
-setWeekSpecial([lunchSpecial, item4, item5, itemA5, itemA6, itemS11, itemS12, itemR20, itemR21, item7, item8]);
+setWeekSpecial([lunchSpecial, item4, item5, itemA6, itemS11, itemS12, itemR20, itemR21, item7, item8]);
