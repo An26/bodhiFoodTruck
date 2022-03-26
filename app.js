@@ -183,8 +183,16 @@ let LeVuLan = {
     "message": "We will be closed from August 19th until August 21st for Le Vu Lan. A festival celebrating our living and past parents."
 }
 
+let randomOffDay = {
+    "startDate": "03/25/2022",
+    "endDate": "08/27/2022",
+    "elementSelector": $('.newsAlert.alert'),
+    "headerHTML": "<strong>-SERVICE ANNOUNCEMENT-</strong> <br />",
+    "message": "We will be closed today due to an unexpected emergency. We will resume tomorrow, 3/27/22' at normal hours. Thanks!"
+}
+
 
 document.addEventListener("DOMContentLoaded", function(){
-    setAlert(vietNYAlert);
+    setAlert(randomOffDay);
     document.getElementsByClassName('copywriteYear')[0].textContent = currentDate.year;
 });
