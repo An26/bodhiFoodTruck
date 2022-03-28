@@ -185,7 +185,7 @@ let LeVuLan = {
 
 let randomOffDay = {
     "startDate": "03/25/2022",
-    "endDate": "03/27/2022",
+    "endDate": "03/28/2022",
     "elementSelector": $('.newsAlert.alert'),
     "headerHTML": "<strong>-SERVICE ANNOUNCEMENT-</strong> <br />",
     "message": "We will be closed today due to an unexpected emergency. We will resume tomorrow, 3/27/22' at normal hours. Thanks!"
