@@ -191,8 +191,16 @@ let randomOffDay = {
     "message": "We will be closed today due to an unexpected emergency. We will resume tomorrow, 3/27/22' at normal hours. Thanks!"
 }
 
+let buddahbday = {
+    "startDate": "04/28/2022",
+    "endDate": "05/18/2022",
+    "elementSelector": $('.newsAlert.alert'),
+    "headerHTML": "<strong>-SERVICE ANNOUNCEMENT-</strong> <br />",
+    "message": "We will be closed from May 5th until May 18th to celebrate buddah's birthday at our temple. Thank you for your patience and well see you afterwards!"
+}
+
 
 document.addEventListener("DOMContentLoaded", function(){
-    setAlert(randomOffDay);
+    setAlert(buddahbday);
     document.getElementsByClassName('copywriteYear')[0].textContent = currentDate.year;
 });
